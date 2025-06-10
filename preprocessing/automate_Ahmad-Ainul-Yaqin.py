@@ -73,7 +73,7 @@ def praproses_data(ukuran_pengujian=0.2, kondisi_acak=42):
     X_train_terskalakan = penskalaan.fit_transform(X_train)
     X_test_terskalakan = penskalaan.transform(X_test)
 
-    nama_folder_keluaran = "Lung_Cancer_preprocessed"
+    nama_folder_keluaran = "Lung_Cancer_preprocessing"
     direktori_praproses = os.path.join(direktori_dasar, nama_folder_keluaran)
 
     os.makedirs(direktori_praproses, exist_ok=True)
